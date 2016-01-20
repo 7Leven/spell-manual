@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Spellmanual.GitHub.io</h1>
+        <h1>CodeSpells Spell Manual</h1>
         <p>Unofficial documentation for CodeSpells. </p>
 
         <p class="view"><a href="https://github.com/7Leven/spell-manual">View the Project on GitHub <small>7Leven/spell-manual</small></a></p>
@@ -31,104 +31,21 @@
         <h1>
 <a id="codespells-documentation" class="anchor" href="#codespells-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>CodeSpells Documentation</h1>
 
-<p><img src="https://the-codespells-forum.herokuapp.com/images/d-logo-sketch.png" alt="CodeSpells Image [not loading]"></p>
+<p><img src="https://the-codespells-forum.herokuapp.com/images/d-logo-sketch.png" alt="CodeSpells Image [not loading]">
+This website is not maintained by the developer of CodeSpells, but rather the forum administator, <a href="https://github.com/7Leven" class="user-mention">@7Leven</a>. 
+This website is not official documentation, but rather a compilation of documentation discovered by the community. </p>
+
+<ul>
+<li><a href="https://the-codespells-forum.herokuapp.com/">Official CodeSpells Forums</a></li>
+<li><a href="http://store.steampowered.com/app/324190/">CodeSpells Steam Page</a></li>
+</ul>
 
 <h2>
-<a id="javascript-functions" class="anchor" href="#javascript-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript Functions</h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h2>
 
-<p>These JavaScript functions are essentially part of the "CodeSpells API". The following code will list the functions in an organized fashion, with all their known parameters.</p>
-
-<h3>
-<a id="control" class="anchor" href="#control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Control:</h3>
-
-<pre><code>function onCreate()
-function onHit()
-function onActivate()
-orb.setTimeout("function", milliseconds)
-orb.setInterval("function", milliseconds)
-orb.createOrb('spell name', Earth Mana, Water Mana, Air Mana, Fire Mana)
-orb.destroySelf()
-</code></pre>
-
-<h3>
-<a id="movement" class="anchor" href="#movement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Movement:</h3>
-
-<pre><code>orb.orbitPlayer(Distance, Time Per Revolution)
-orb.orbitOwner(Same parameters as above)
-orb.disableOrbit()
-orb.lockToPlayerRotation(Distance)
-orb.unlockFromPlayerRotation()
-orb.turnLeft(Degrees)
-orb.setRotationUp()
-orb.setRotationDown()
-orb.setRotationRandom()
-orb.pointAtPlayer()
-</code></pre>
-
-<h3>
-<a id="properties" class="anchor" href="#properties" aria-hidden="true"><span class="octicon octicon-link"></span></a>Properties</h3>
-
-<pre><code>getLifeTime()
-distanceToPlayer()
-getEarthMana()
-getWaterMana()
-getFireMana()
-getAirMana()
-setColor('Color Hex Value')
-</code></pre>
-
-<h3>
-<a id="world-objects" class="anchor" href="#world-objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>World Objects:</h3>
-
-<pre><code>getPlayer()
-getCreator()
-getLastHitWorldObject()
-isMoveable()
-getMass()
-</code></pre>
-
-<h3>
-<a id="earth-powers" class="anchor" href="#earth-powers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Earth Powers:</h3>
-
-<pre><code>liftSand(true/false)
-lowerSand(true/false)
-createPhysicalConnection(Connected Object, "STRENGTH(IN CAPS)")
-breakPhysicalConnections()
-moveWorldObjectToOrb(Object)
-changeRock(value)
-</code></pre>
-
-<h3>
-<a id="water-powers" class="anchor" href="#water-powers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Water Powers:</h3>
-
-<pre><code>setPushWater('True/False', Strength Value)
-setAlterWaterFlow('True/False', Strength Value, Direction offset in degrees)
-setRemoveWater('True/False')
-setHumidity('True/False', Humidity Value)
-setAddWater('True/False*')
-</code></pre>
-
-<h3>
-<a id="fire-powers" class="anchor" href="#fire-powers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fire Powers:</h3>
-
-<pre><code>fire_explosion()
-setOrbTemperature(Value)
-</code></pre>
-
-<h3>
-<a id="debug" class="anchor" href="#debug" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debug</h3>
-
-<pre><code>log('MESSAGE/WARNING/ERROR', 'Message')
-evaluateUnityScript('UnityScript')
-</code></pre>
-
-<p>Note: Most of these functions work with orb. behind it. For example, orb.fire_explosion()</p>
-
-<p>Note: If you are trying to find one object but it has to be separated with a ".", adding parentheses will make it one object. For example, orb.getLastHitWorldObject().getMass() would have to be changed to (orb.getLastHitWorldObject()).getMass() to find the mass of the last hit object.</p>
-
-<p><strong>The information in this post is liable to revision. Check back during updates for new information.</strong></p>
-
-<p>Credits to Hephaestus789 for originally posting this information on the forums. <a href="https://the-codespells-forum.herokuapp.com/t/a-list-of-functions/1139">Original Post</a>.</p>
+<ul>
+<li><a href="http://7leven.github.io/spell-manual/jsdoc.html">JavaScript Functions</a></li>
+</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/7Leven">7Leven</a></p>
